@@ -1,0 +1,12 @@
+Enter first value: 12.0
+Enter second value: 12.0
+Addition Result: 24.0
+
+Enter first value: 12.0
+Enter second value: 0.0
+Please Enter Correct Value
+
+Enter first value: 12.0
+Enter second value: 12.0
+Division Result: 1.0
+
