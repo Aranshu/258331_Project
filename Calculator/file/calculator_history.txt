@@ -4,3 +4,6 @@ Logarithm Result: 3.8066624897703196
 Enter value: 12.0
 Sine Result: -0.5365729180004349
 
+Enter value: 25.0
+Square Root Result: 5.0
+
