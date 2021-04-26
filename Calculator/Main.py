@@ -1,29 +1,43 @@
 import math
 
-
+#Class use for File Handling
 class Calculator_History:
-    
 
     def file_content_printing(self):
 
-        file = open("./3_Implementation/calculator_history.txt", "r")
-        print(file.read()) 
-        file.close()
-    
+        file = open("./Calculator/file/calculator_history.txt", "r")
+        if(file!=None):
+            print(file.read()) 
+            file.close()
+            return True
+        else:
+            file.close()
+            return False
 
+    
     def file_content_storing(self,String_to_be_stored):
 
-        file = open("./3_Implementation/calculator_history.txt", "a")
-        file.write(String_to_be_stored)
-        file.close()
+        file = open("./Calculator/file/calculator_history.txt", "a")
+        if(file!=None):
+            file.write(String_to_be_stored)
+            file.close()
+            return True
+        else:
+            file.close()
+            return False
 
     def file_content_deleting(self):
-         file = open("./3_Implementation/calculator_history.txt", "w")
-         file.close()
+        file = open("./Calculator/file/calculator_history.txt", "w")
+        if(file!=None):
+            file.close()
+            return True
+        else:
+            file.close()
+            return False
 
 
+#Class Used for All Arithmetic Operations
 class Calculator_Operation:
-
 
     def __init__(self,first_number,second_number):
         self.first_number=first_number
@@ -133,9 +147,8 @@ class Calculator_Operation:
         return math.log(self.first_number)
 
 
-
+#Class Used for taking User Input
 class Calculator_Input(Calculator_Operation):
-
 
     def __init__(self,number_of_parameter):
     
@@ -171,7 +184,7 @@ class Calculator_Input(Calculator_Operation):
             print("Invalid choice!!") 
 
 
-
+#Class Used for All Menu Printing and Related Services
 class Calculator():
 
     def main_menu(self):
@@ -192,12 +205,14 @@ class Calculator():
             object_history=Calculator_History()
             object_history.file_content_printing()
             del object_history
+            return True
         
         elif choice_main_menu==2:
 
             object=Calculator()                  
             object.sub_menu_choice(object.sub_menu())
             del object
+            return True
 
         elif choice_main_menu==3:
 
@@ -207,15 +222,18 @@ class Calculator():
             object_history.file_content_deleting()
             del object_history
             print("Deletion Completed\n")
+            return True
 
         elif choice_main_menu==0:
 
             print("\nExiting!\n")
             exit(0)
+            return True
         
         else:
 
-            print("Invalid choice!!")  
+            print("Invalid choice!!") 
+            return False 
 
 
     def sub_menu(self):
@@ -250,6 +268,7 @@ class Calculator():
             object_history.file_content_storing("Addition Result: "+str(object_input.addition())+"\n\n")
             del object_input
             del object_history
+            return True
 
         elif choice==2:
 
@@ -259,6 +278,7 @@ class Calculator():
             object_history.file_content_storing("Subtraction Result: "+str(object_input.subtraction())+"\n\n")
             del object_input
             del object_history
+            return True
 
         elif choice==3:
 
@@ -268,6 +288,7 @@ class Calculator():
             object_history.file_content_storing("Multiplication Result: "+str(object_input.multiplication())+"\n\n")
             del object_input
             del object_history
+            return True
 
         elif choice==4:
 
@@ -277,6 +298,7 @@ class Calculator():
             object_history.file_content_storing("Division Result: "+str(object_input.division())+"\n\n")
             del object_input
             del object_history
+            return True
 
         elif choice==5:
 
@@ -286,6 +308,7 @@ class Calculator():
             object_history.file_content_storing("Modulus Result: "+str(object_input.modulus())+"\n\n")
             del object_input
             del object_history
+            return True
 
         elif choice==6:
 
@@ -295,6 +318,7 @@ class Calculator():
             object_history.file_content_storing("Power Result: "+str(object_input.power())+"\n\n")
             del object_input
             del object_history
+            return True
 
         elif choice==7:
 
@@ -304,6 +328,7 @@ class Calculator():
             object_history.file_content_storing("Power Square Result: "+str(object_input.power_square())+"\n\n")
             del object_input
             del object_history
+            return True
 
         elif choice==8:
 
@@ -313,6 +338,7 @@ class Calculator():
             object_history.file_content_storing("Power Cube Result: "+str(object_input.power_cube())+"\n\n")
             del object_input
             del object_history
+            return True
 
         elif choice==9:
 
@@ -322,6 +348,7 @@ class Calculator():
             object_history.file_content_storing("Square Root Result: "+str(object_input.square_root())+"\n\n")
             del object_input
             del object_history
+            return True
 
         elif choice==10:
 
@@ -331,6 +358,7 @@ class Calculator():
             object_history.file_content_storing("Cube Root Result: "+str(object_input.cube_root())+"\n\n")
             del object_input
             del object_history
+            return True
         
         elif choice==11:
 
@@ -340,6 +368,7 @@ class Calculator():
             object_history.file_content_storing("Factorial Result: "+str(object_input.factorial())+"\n\n")
             del object_input
             del object_history
+            return True
 
         elif choice==12:
 
@@ -349,6 +378,7 @@ class Calculator():
             object_history.file_content_storing("Sine Result: "+str(object_input.sine())+"\n\n")
             del object_input
             del object_history
+            return True
 
         elif choice==13:
 
@@ -358,6 +388,7 @@ class Calculator():
             object_history.file_content_storing("Cosine Result: "+str(object_input.cosine())+"\n\n")
             del object_input
             del object_history
+            return True
 
         elif choice==14:
 
@@ -367,6 +398,7 @@ class Calculator():
             object_history.file_content_storing("Tangent Result: "+str(object_input.tangent())+"\n\n")
             del object_input
             del object_history
+            return True
 
         elif choice==15:
 
@@ -376,18 +408,22 @@ class Calculator():
             object_history.file_content_storing("Logarithm Result: "+str(object_input.logarithm())+"\n\n")
             del object_input
             del object_history
+            return True
 
         elif choice==0:
          
             object=Calculator()  
             object.main_menu_choice(object.main_menu())
             del object
+            return True
 
         else:
 
-            print("Invalid choice!!")        
+            print("Invalid choice!!")
+            return False        
 
 
+#Main Function of the Program
 def main():
 
     object=Calculator()                  
