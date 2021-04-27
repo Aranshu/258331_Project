@@ -110,7 +110,7 @@ class Calculator_History:
 
     def file_content_printing(self):
 
-        file = open("./Calculator/file/calculator_history.txt", "r")
+        file = open("./Calculator/File/calculator_history.txt", "r")
         if(file!=None):
             print(file.read()) 
             file.close()
@@ -122,7 +122,7 @@ class Calculator_History:
     
     def file_content_storing(self,String_to_be_stored):
 
-        file = open("./Calculator/file/calculator_history.txt", "a")
+        file = open("./Calculator/File/calculator_history.txt", "a")
         if(file!=None):
             file.write(String_to_be_stored)
             file.close()
@@ -132,7 +132,7 @@ class Calculator_History:
             return False
 
     def file_content_deleting(self):
-        file = open("./Calculator/file/calculator_history.txt", "w")
+        file = open("./Calculator/File/calculator_history.txt", "w")
         if(file!=None):
             file.close()
             return True
