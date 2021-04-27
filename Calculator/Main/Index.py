@@ -1,4 +1,109 @@
 import math
+import pytest
+
+#Class used for Testing
+class Test_Calculator():
+
+    def test_calculator_history_file_content_storing(self):
+        object_calculator_history=Calculator_History()
+        assert  object_calculator_history.file_content_storing("This was a Test Run\n")==True
+        del object_calculator_history
+
+    def test_calculator_history_file_content_printing(self):
+        object_calculator_history=Calculator_History()
+        assert  object_calculator_history.file_content_printing()==True
+        del object_calculator_history
+
+    def test_calculator_history_file_content_deleting(self):  
+        object_calculator_history=Calculator_History()
+        assert  object_calculator_history.file_content_deleting()==True
+        del object_calculator_history
+
+    def test_calculator_operation_addition(self):
+        object_calculator_operation=Calculator_Operation(10, 10)
+        assert object_calculator_operation.addition()==20.0
+        del object_calculator_operation
+    
+    def test_calculator_operation_subtraction(self):
+        object_calculator_operation=Calculator_Operation(10, 10)
+        assert object_calculator_operation.subtraction()==0.0
+        del object_calculator_operation
+    
+    def test_calculator_operation_multiplication(self):
+        object_calculator_operation=Calculator_Operation(10, 10)
+        assert object_calculator_operation.multiplication()==100.0
+        del object_calculator_operation
+    
+    def test_calculator_operation_division(self):
+        object_calculator_operation=Calculator_Operation(20, 10)
+        assert object_calculator_operation.division()==2.0
+        del object_calculator_operation
+    
+    def test_calculator_operation_modulus(self):
+        object_calculator_operation=Calculator_Operation(10, 8)
+        assert object_calculator_operation.modulus()==2.0
+        del object_calculator_operation
+    
+    def test_calculator_operation_power(self):
+        object_calculator_operation=Calculator_Operation(2,3)
+        assert object_calculator_operation.power()==8.0
+        del object_calculator_operation
+    
+    def test_calculator_operation_power_square(self):
+        object_calculator_operation=Calculator_Operation(3,0)
+        assert object_calculator_operation.power_square()==9.0
+        del object_calculator_operation
+    
+    def test_calculator_operation_power_cube(self):
+        object_calculator_operation=Calculator_Operation(3,0)
+        assert object_calculator_operation.power_cube()==27.0
+        del object_calculator_operation
+
+    def test_calculator_operation_factorial(self):
+        object_calculator_operation=Calculator_Operation(5,0)
+        assert object_calculator_operation.factorial()==120.0
+        del object_calculator_operation
+
+    def test_calculator_operation_square_root(self):
+        object_calculator_operation=Calculator_Operation(25,0)
+        assert object_calculator_operation.square_root()==5.0
+        del object_calculator_operation
+    
+    def test_calculator_operation_cube_root(self):
+        object_calculator_operation=Calculator_Operation(27,0)
+        assert object_calculator_operation.cube_root()==3.0
+        del object_calculator_operation
+    
+    def test_calculator_operation_sine(self):
+        object_calculator_operation=Calculator_Operation(90,0)
+        assert object_calculator_operation.sine()==1.0
+        del object_calculator_operation
+
+    def test_calculator_operation_cosine(self):
+        object_calculator_operation=Calculator_Operation(0,0)
+        assert object_calculator_operation.cosine()==1.0
+        del object_calculator_operation
+
+    def test_calculator_operation_tangent(self):
+        object_calculator_operation=Calculator_Operation(45,0)
+        assert object_calculator_operation.tangent()==1.6197751905438615
+        del object_calculator_operation
+
+    def test_calculator_operation_logarithm(self):
+        object_calculator_operation=Calculator_Operation(1,0)
+        assert object_calculator_operation.logarithm()==0.0
+        del object_calculator_operation
+
+    def test_calculator_main_menu_choice(self):
+        object_calculator=Calculator()
+        assert object_calculator.main_menu_choice(4)==False
+        del object_calculator
+
+    def test_calculator_sub_menu_choice(self):
+        object_calculator=Calculator()
+        assert object_calculator.main_menu_choice(15)==False
+        del object_calculator
+    
 
 #Class use for File Handling
 class Calculator_History:
@@ -130,11 +235,11 @@ class Calculator_Operation:
     
     def sine(self):
 
-        return math.sin(self.first_number)
+        return math.sin(math.radians(self.first_number))
     
     def cosine(self):
 
-        return math.cos(self.first_number)
+        return math.cos(math.radians(self.first_number))
     
 
     def tangent(self):

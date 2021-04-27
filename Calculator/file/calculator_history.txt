@@ -1,9 +1,8 @@
-Enter value: 45.0
-Logarithm Result: 3.8066624897703196
+Enter first value: 12.0
+Enter second value: 13.0
+Addition Result: 25.0
 
-Enter value: 12.0
-Sine Result: -0.5365729180004349
-
-Enter value: 25.0
-Square Root Result: 5.0
+Enter first value: 12.0
+Enter second value: 2.0
+Multiplication Result: 24.0
 
