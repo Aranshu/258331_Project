@@ -1,0 +1,4 @@
+Enter first value: 12.0
+Enter second value: 12.0
+Addition Result: 24.0
+
