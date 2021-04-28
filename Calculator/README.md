@@ -7,3 +7,18 @@
 |`File`               | Contain File Calculator History
 |`Main`               | Contain Index.py 
 
+## Output of Code
+
+### Calculator Main Page
+![Calculator Main Page]()
+
+#### Calculator History
+![Calculator History]()
+
+#### Calculator
+![Calculator]()
+
+#### Deleting History
+![Deleting History]()
+
+

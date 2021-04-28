@@ -1,8 +1,0 @@
-Enter first value: 12.0
-Enter second value: 13.0
-Addition Result: 25.0
-
-Enter first value: 12.0
-Enter second value: 2.0
-Multiplication Result: 24.0
-

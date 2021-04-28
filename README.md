@@ -14,7 +14,7 @@
 
 SF Id. |  Name   |    Features    | Issuess Raised |Issues Resolved|Total Test Cases|Test Case Pass
 -------|---------|----------------|----------------|---------------|-------------|--------------
-`258331` | Aranshu Bansal  | Scientific Calculator   | No     | No   | No   | No |     
+`258331` | Aranshu Bansal  | Scientific Calculator   | No     | No   | 20   | 20  |     
    
 
 ## Challenges Faced and How Was It Overcame
