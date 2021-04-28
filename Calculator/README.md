@@ -7,18 +7,16 @@
 |`File`               | Contain File Calculator History
 |`Main`               | Contain Index.py 
 
-## Output of Code
-
 ### Calculator Main Page
 ![Calculator Main Page](https://github.com/Aranshu/258331_Project/blob/master/Images/Main%20Menu.PNG?raw=true)
 
-#### Calculator History
+### Calculator History
 ![Calculator History](https://github.com/Aranshu/258331_Project/blob/master/Images/Calculator_History.PNG?raw=true)
 
-#### Calculator
+### Calculator
 ![Calculator](https://github.com/Aranshu/258331_Project/blob/master/Images/Calculator_List.PNG?raw=true)
 
-#### Deleting History
+### Deleting History
 ![Deleting History](https://github.com/Aranshu/258331_Project/blob/master/Images/Calculator_List.PNG?raw=true)
 
 
