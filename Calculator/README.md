@@ -19,4 +19,5 @@
 ### Deleting History
 ![Deleting History](https://github.com/Aranshu/258331_Project/blob/master/Images/Deleting_History.PNG?raw=true)
 
-
+### Test Case
+![Deleting History])()
