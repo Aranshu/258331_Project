@@ -10,6 +10,10 @@
 |`Images`             | Contain Images 
 
 
+##Pre-Requirements
+`Install pytest :- "pip install pytest"
+
+
 ## Contributors List and Summary
 
 SF Id. |  Name   |    Features    | Issuess Raised |Issues Resolved|Total Test Cases|Test Case Pass
