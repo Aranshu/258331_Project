@@ -20,4 +20,4 @@
 ![Deleting History](https://github.com/Aranshu/258331_Project/blob/master/Images/Deleting_History.PNG?raw=true)
 
 ### Test Case
-![Deleting History])(https://github.com/Aranshu/258331_Project/blob/master/Images/Test_Case.PNG?raw=true)
+![Deleting History](https://github.com/Aranshu/258331_Project/blob/master/Images/Test_Case.PNG?raw=true)
