@@ -11,7 +11,7 @@
 
 
 ## Pre-Requirements
-`Install pytest :- "pip install pytest"
+`Install pytest :- "pip install pytest"`
 
 
 ## Contributors List and Summary
