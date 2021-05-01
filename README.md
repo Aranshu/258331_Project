@@ -1,6 +1,9 @@
 # SDLC Activity Based Learning
 * This scientific calculator project is in Python. Talking about the features of this system, this python program is designed to calculate entered numbers to any operations and it is also capable of handling all types of exceptions. Also, the design of this system is pretty simple so that the user won’t get any difficulties while working on it. This scientific calculator is also able to store the history of calculated result which can be viewed as well as deleted by the user
 
+## Pre-Requirements
+`Install pytest :- "pip install pytest"`
+
 ![Banner](https://github.com/Aranshu/258331_Project/blob/master/Images/Calculator.jpg?raw=true)
 
 ## Folder Structure
@@ -8,10 +11,6 @@
 |---------------------|------------------------------------------
 |`Calculator`         | Contain Main function and File
 |`Images`             | Contain Images 
-
-
-## Pre-Requirements
-`Install pytest :- "pip install pytest"`
 
 
 ## Contributors List and Summary
