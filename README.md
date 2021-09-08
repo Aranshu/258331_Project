@@ -7,10 +7,10 @@
 ![Banner](https://github.com/Aranshu/258331_Project/blob/master/Images/Calculator.jpg?raw=true)
 
 ## Folder Structure
-|Folder               | Description
-|---------------------|------------------------------------------
-|`Calculator`         | Contain Main function and File
-|`Images`             | Contain Images 
+Folder               | Description
+---------------------|------------------------------------------
+`Calculator`         | Contain Main function and File
+`Images`             | Contain Images 
 
 
 ## Contributors List and Summary
